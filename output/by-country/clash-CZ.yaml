@@ -6,8 +6,64 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 104.18.39.218
-  port: 80
+  server: 104.21.5.173
+  port: 2096
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+- name: 🇨🇿 CZ 02 - xiaohe
+  type: vless
+  server: 104.26.12.54
+  port: 8443
+  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: square-salad-ebde.zdfgvccfguuyggg.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0?ed=8443
+    headers:
+      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
+- name: 🇨🇿 CZ 03 - xiaohe
+  type: vless
+  server: 172.64.80.1
+  port: 443
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇨🇿 CZ 04 - xiaohe
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-5FAAFb.EsmAoi.wORKeRs.DEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ez-5faafb.esmaoi.workers.dev
+- name: 🇨🇿 CZ 05 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -16,18 +72,87 @@ proxies:
   ws-opts:
     path: /?ed=2560security=tls
     headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 06 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 813cd228-ebf6-0e21-481a-ba4af8f85b82
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-disk-98c5.assassincreed4048.workers.dev
+- name: 🇨🇿 CZ 07 - xiaohe
+  type: vless
+  server: 108.162.198.178
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 08 - xiaohe
+  type: vless
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 09 - xiaohe
+  type: vless
+  server: 188.114.96.7
+  port: 8443
+  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: fragrant-unit-d662.mmammatrix770088.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
+  - 🇨🇿 CZ 06 - xiaohe
+  - 🇨🇿 CZ 07 - xiaohe
+  - 🇨🇿 CZ 08 - xiaohe
+  - 🇨🇿 CZ 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
+  - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
+  - 🇨🇿 CZ 05 - xiaohe
+  - 🇨🇿 CZ 06 - xiaohe
+  - 🇨🇿 CZ 07 - xiaohe
+  - 🇨🇿 CZ 08 - xiaohe
+  - 🇨🇿 CZ 09 - xiaohe
 rules:
 - MATCH,PROXIES
