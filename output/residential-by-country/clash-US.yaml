@@ -20,8 +20,8 @@ proxies:
       Host: 123.714541.xyz
 - name: 🇺🇸 美国 (United States) 02 (家宽) - xiaohe
   type: vless
-  server: 172.64.32.108
-  port: 2086
+  server: 162.159.48.32
+  port: 80
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
